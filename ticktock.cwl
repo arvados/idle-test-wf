@@ -16,7 +16,12 @@ steps:
     out: [outTicks]
   step3:
     in:
-      ticks: step2/outTicks
+      ticks: step1/outTicks
+    run: ticker.cwl
+    out: [outTicks]
+  step4:
+    in:
+      ticks: step3/outTicks
     run: ticker.cwl
     out: [outTicks]
 
