@@ -6,6 +6,8 @@ $namespaces:
 
 requirements:
   arv:APIRequirement: {}
+  arv:WorkflowRunnerResources:
+    ramMin: 512
 
 inputs:
   tickers: int

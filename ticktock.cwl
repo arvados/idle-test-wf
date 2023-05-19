@@ -1,5 +1,13 @@
 cwlVersion: v1.2
 class: Workflow
+
+$namespaces:
+  arv: "http://arvados.org/cwl#"
+
+requirements:
+  arv:WorkflowRunnerResources:
+    ramMin: 512
+
 inputs:
   ticksPerStep: int
 
