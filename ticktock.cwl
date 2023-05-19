@@ -4,7 +4,7 @@ class: Workflow
 $namespaces:
   arv: "http://arvados.org/cwl#"
 
-requirements:
+hints:
   arv:WorkflowRunnerResources:
     ramMin: 512
 

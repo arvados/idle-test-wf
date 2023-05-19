@@ -6,6 +6,8 @@ $namespaces:
 
 requirements:
   arv:APIRequirement: {}
+
+hints:
   arv:WorkflowRunnerResources:
     ramMin: 512
 
