@@ -13,12 +13,14 @@ hints:
 
 inputs:
   tickers: int
+  arvwf: string
+  tps: int
   script:
     type: File
     default:
       class: File
       location: launcher.py
 
-arguments: [python3, $(inputs.script), $(inputs.tickers)]
+arguments: [python3, $(inputs.script), $(inputs.tickers), $(inputs.arvwf), $(inputs.tps)]
 
 outputs: []

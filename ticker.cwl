@@ -1,5 +1,12 @@
 cwlVersion: v1.2
 class: CommandLineTool
+
+$namespaces:
+  arv: "http://arvados.org/cwl#"
+
+requirements:
+  arv:APIRequirement: {}
+
 inputs:
   ticks: int
   script:
