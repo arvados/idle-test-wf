@@ -11,6 +11,8 @@ hints:
   arv:WorkflowRunnerResources:
     ramMin: 512
 
+doc: {$include: README}
+
 inputs:
   tickers: int
   arvwf: string
