@@ -11,7 +11,7 @@ print("launching %s tickers" % tickers, flush=True)
 for i in range(1, tickers+1):
     subprocess.run(["arvados-cwl-runner", "--no-wait", "--disable-reuse", "--name=tick-tock-test-%s" % i, arvwf, "--ticksPerStep="+str(tps)])
 
-ticks=tps*5
+ticks=tps*10
 print("ticking", flush=True)
 
 for i in range(1, ticks+1):
