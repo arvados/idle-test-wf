@@ -1,0 +1,11 @@
+Synthetic load test for Arvados.
+
+Uses tiny nodes so we can allocate 100s to 1000s of nodes very cheaply.
+
+Example:
+
+Launch 1000 "ticktock" workflows consisting of 5 steps, each step runs for tps * 10 seconds.  Since 90 ticks is 900 seconds, each step is 15 minutes.
+
+$ arvados-cwl-runner --create-workflow ticktock.cwl
+
+$ arvados-cwl-runner --no-wait  --project-uuid scale-j7d0g-am65vfbxz3q19se launcher.cwl --arvwf scale-7fd4e-y3oz4zd7ilw7gv8 --tickers 1000 --tps 90
